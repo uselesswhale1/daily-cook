@@ -90,7 +90,6 @@ export default function Feed() {
       nextPageUrl.current = data._links.next.href;
       favoritesRecipes.current = favorites || [];
     }).catch((e) => {
-      console.log(e);
       setLoading(false);
       setError(true);
       setRecipes([]);
@@ -124,7 +123,6 @@ export default function Feed() {
         setInputLoading(false);
       })
       .catch((er) => {
-        console.log(er);
         setOptions([]);
         setInputLoading(false);
       });
@@ -174,8 +172,6 @@ export default function Feed() {
       )}
     />
   );
-
-  console.log(error, recipes);
 
   return (
     <Grid
