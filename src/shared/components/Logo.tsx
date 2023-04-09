@@ -1,6 +1,7 @@
 import React from 'react';
 import { Typography, Box } from '@mui/material';
-import { logoSizes } from '../constants/logo-sizes.constants';
+
+import logoSizes from '../constants/logo-sizes.constants';
 
 export default function Logo({ hasSlogan, size = logoSizes.lg }: any) {
   const icon = <span className="material-symbols-outlined" style={{ verticalAlign: 'top' }}>cookie</span>;

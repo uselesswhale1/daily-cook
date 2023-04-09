@@ -1,14 +1,14 @@
 export const FoodDatabase = {
-  appId: '40d45a60',
-  appKey: '2e6d37cb4f7b006f8d278a45d244ace8',
+  appId: 'dec049e7',
+  appKey: '5ae124da3ed0a85374653825cfaf8b19',
 };
 export const NutritionAnalysis = {
-  appId: '64ba9c71',
-  appKey: 'a58d5b08cba516553aedbedfb0f2e51c',
+  appId: 'dad3ed64',
+  appKey: '28e4f721eeaf7212e9602067a6097fc0',
 };
 export const RecipeSearch = {
-  appId: 'b3e11bea',
-  appKey: '43fed26fc6b2f5f5695fe3358ff8242a',
+  appId: '8fde1378',
+  appKey: 'f85fec264a00aa64cc0e1d02228839d7',
 };
 export const RECIPE_SEARCH_URL = 'https://api.edamam.com/api/recipes/v2';
 export const NUTRITION_ANALYSIS_URL = 'https://api.edamam.com/api/nutrition-data';

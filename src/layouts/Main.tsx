@@ -21,7 +21,9 @@ import useStyles from '../useStyles';
 import { signOut } from '../api/auth.api';
 import useUserStore from '../storage/useUserStore';
 import UserAvatar from '../shared/components/UserAvatar';
-import { logoSizes } from '../shared/constants/logo-sizes.constants';
+
+import logoSizes from '../shared/constants/logo-sizes.constants';
+
 import { UserStore } from '../shared/interfaces';
 
 export default function Main() {
