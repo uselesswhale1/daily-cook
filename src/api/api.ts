@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import {
   RECIPE_SEARCH_URL,
   RecipeSearch,
@@ -8,7 +9,6 @@ export function fetchRecipes(q?: string) {
     .then((response) => response.json())
     .then((data) => data)
     .catch((er) => {
-      // eslint-disable no-console
       console.error(er);
       return [];
     });
@@ -19,7 +19,6 @@ export function fetchRecipeById(id: string) {
     .then((response) => response.json())
     .then((data) => data)
     .catch((er) => {
-      // eslint-disable no-console
       console.error(er);
       return [];
     });
@@ -30,7 +29,6 @@ export function fetchRecipesByUrl(url: string) {
     .then((response) => response.json())
     .then((data) => data)
     .catch((er) => {
-      // eslint-disable no-console
       console.error(er);
       return [];
     });

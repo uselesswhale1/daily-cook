@@ -1,5 +1,5 @@
-/* eslint-disable next-line */
-import React, { useState, useEffect } from 'react';
+/* eslint-disable no-console, no-alert */
+import React, { useEffect } from 'react';
 import {
   Grid,
   Typography,
@@ -23,24 +23,24 @@ export default function CommentsList(props: any) {
   const handleAdding = (newComment: CommentElem) => {
     addNewComment(newComment)
       .then(() => {
-        // alert('Comment is added successfully!');
+        alert('Comment is added successfully!');
       }).catch((err) => {
-        // console.error(err.message);
+        console.error(err.message);
       });
     onChange();
   };
 
   const handleUpdating = (commentId: string, newComment: CommentElem) => {
     updateComment(commentId, newComment)
-    // .then(() => alert('Comment updated!'))
-    // .catch((err) => console.error(err.message));
+      .then(() => alert('Comment updated!'))
+      .catch((err) => console.error(err.message));
     onChange();
   };
 
   const handleRemoving = (commentId: string) => {
     removeComment(commentId)
-    // .then(() => alert('Comment was removed!'))
-    // .catch((err) => console.error(err.message));
+      .then(() => alert('Comment was removed!'))
+      .catch((err) => console.error(err.message));
     onChange();
   };
 

@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-escape */
 declare module '\*.svg' {
   const src: string;
   export default src;
